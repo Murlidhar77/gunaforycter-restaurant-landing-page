@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    background-color: aliceblue;
+}
+
+.header,
+.card h1,
+.launch .name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 30px;
+    background-color: #0B0809;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    font-size: larger;
+}
+
+.card-section {
+    padding: 10px;
+    margin-left: 120px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.card {
+    padding: 10px;
+    background-color: #141211;
+    border: 2px solid #1A1817;
+    border-radius: 10px;
+    height: 500px;
+    width: 19vw;
+}
+
+.card {
+    border: 1px solid #242424;
+    border-radius: 20px;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.card:hover {
+    border-color: #f58a07;
+    box-shadow:
+        0 0 10px rgba(255, 140, 0, 0.35),
+        0 0 25px rgba(255, 140, 0, 0.2);
+    transform: translateY(-5px);
+
+}
+
+.logo {
+    border: 2px solid #f58a07;
+    height: 35px;
+    width: 80px;
+    color: #fc961a;
+    border-radius: 20px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.dot :hover {
+    box-shadow:
+        0 0 10px rgba(255, 140, 0, 0.35),
+        0 0 25px rgba(255, 140, 0, 0.2);
+    transform: translateY(-5px);
+
+}
+
+.dot {
+    margin-left: 10px;
+    height: 10px;
+    width: 10px;
+    background-color: #f58a07;
+    border-radius: 50%;
+}
+
+.card img {
+    left: 10%;
+    position: relative;
+    top: 5%;
+    height: 220px;
+    width: 15vw;
+}
+
+.card h1 {
+
+    text-align: center;
+    margin-top: 40px;
+}
+
+.description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: grey;
+    text-align: center;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    margin-left: 90px;
+    height: 2px;
+    width: 100px;
+    background-color: #693411;
+}
+
+.price {
+    color: #D9771A;
+    margin-top: 30px;
+    text-align: center;
+    font-size: larger;
+}
+
+.launch {
+    border-radius: 20px;
+    margin-left: 70px;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #644331;
+    background-color: #0D0D0D;
+}
+
+.launch-image {
+    height: 100px;
+    height: 500px;
+    padding: 30px;
+}
+
+.launch-image img {
+    height: 400px;
+    width: 30vw;
+
+}
+.tag {
+    color: #A75C0B;
+}
+
+.name{
+    font-size: xx-large;
+}
+
+
+.lower {
+    width: 60vw;
+    padding-left: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    gap: 13px;
+}
+
+.description{
+    position: relative;
+    right: 32%;
+    top: 5%;
+}
+.description-two{
+    margin-top: 20px;
+    font-size: large;
+    color: grey;
+    width: 40vw;
+
+}
+
+.lower button{
+    margin-top: 40px;
+    border: 2px solid #C9752B ;
+    border-radius: 30px;
+    padding: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 10vw;
+    color:#C9752B;
+    background-color: #0E0E0E;
+}
+
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    padding: 22px 48px;
+
+    background: #0b0b0b;
+    border-top: 2px solid #5c3215;
+
+    color: #888;
+    font-size: 14px;
+}
+
+/* Copyright */
+.copyright {
+    justify-self: start;
+    white-space: nowrap;
+}
+
+/* Center navigation */
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.footer-nav a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #c87522;
+}
+
+.footer-nav span {
+    color: #c87522;
+}
+
+/* Social section */
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.social > span {
+    margin-right: 8px;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    border: 1px solid #7a431b;
+    border-radius: 50%;
+
+    color: #c87522;
+    text-decoration: none;
+
+    font-size: 11px;
+
+    transition: all 0.3s ease;
+}
+
+.social a:hover {
+    background: #c87522;
+    color: #0b0b0b;
+}
+
