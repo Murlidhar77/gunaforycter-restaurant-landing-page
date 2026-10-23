@@ -115,6 +115,7 @@ body {
 }
 
 .description {
+    text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
     color: grey;
@@ -180,11 +181,7 @@ body {
     gap: 13px;
 }
 
-.description{
-    position: relative;
-    right: 32%;
-    top: 5%;
-}
+
 .description-two{
     margin-top: 20px;
     font-size: large;
@@ -274,14 +271,11 @@ body {
 
     color: #c87522;
     text-decoration: none;
-
     font-size: 11px;
-
+    background-color: #cf7413;
     transition: all 0.3s ease;
 }
 
-.social a:hover {
-    background: #c87522;
-    color: #0b0b0b;
+.social a img{
+    height: 17px;
 }
-
